@@ -26,7 +26,7 @@ class CalculatorController extends Controller
         ];
         $this->validate($request, $rules);
 
-        $result = $this->{$request->operation}($request->values);
+        $result = $this->{$request->operation}();
 
         $data = [
             'result' => $result,

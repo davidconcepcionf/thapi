@@ -1,12 +1,17 @@
 {
-    "name": "laravel/laravel",
+    "name": "thapi",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Test Tower House Studio API",
     "keywords": [
-        "framework",
-        "laravel"
+        "test"
     ],
     "license": "MIT",
+    "authors": [
+        {
+            "name": "David Concepcion",
+            "email": "davidconcepcionf@gmail.com"
+        }
+    ],
     "require": {
         "php": "^7.1.3",
         "fideloper/proxy": "^4.0",

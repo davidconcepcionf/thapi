@@ -73,8 +73,8 @@ class Handler extends ExceptionHandler
             return $this->errorResponse($exception->getMessage(), $exception->getStatusCode());
         }
 
-        return parent::render($request, $exception);
-        // return $this->errorResponse('Unexpected System Error. Try later', 500);
+        //return parent::render($request, $exception);
+        return $this->errorResponse('Unexpected System Error. Try later', 500);
     }
 
     /**

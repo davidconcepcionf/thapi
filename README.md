@@ -4,13 +4,19 @@ This is the result of the questions 7 and 8 of the test
 
 The code was written on php, under Laravel 5.7 framework
 
-To try it, you have to install php 7
+To try it, you have to install php 7 and composer
 
 For practical purposes, and without having a complete server configured
 
-Just execute in the root of the project this command to start the PHP's built-in development server of Laravel 
+Just execute in the root of the project this commands under linux environment  
 
-`php artisan serve`
+* `composer install`
+
+* `mv .env.example .env`
+
+* `php artisan key:generate`
+
+* `php artisan serve` to start the PHP's built-in development server of Laravel
 
 Once the server starts, open your browser and enter this link
 

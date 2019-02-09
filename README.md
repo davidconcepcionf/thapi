@@ -16,7 +16,7 @@ Once the server starts, open your browser and enter this link
 
 **http://127.0.0.1:8000/front**
 
-You can try the endpoint directly making a POST request from Postman to this url
+You can directly try the endpoint making a POST request with a REST client like Postman to this url
 
 **127.0.0.1:8000/api/calculator**
 

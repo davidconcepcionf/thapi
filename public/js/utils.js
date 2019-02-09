@@ -1,11 +1,11 @@
 $(document).ready(function () {
     $('#calculate').on( "click", function() {
         $('#result').html('');
-        $('#result-title').removeClass('alert alert-danger');
-        $(this).removeClass('btn-primary').addClass('btn-info');
-        $('#calculate span').show();
-
         if ($("form").valid()) {
+            $('#result-title').removeClass('alert alert-danger');
+            $(this).removeClass('btn-primary').addClass('btn-info');
+            $('#calculate span').show();
+
             $.ajax({
                 type: "POST",
                 url: "/api/calculator",

@@ -21,7 +21,7 @@ class CalculatorController extends Controller
     {
         $rules = [
             'values' => 'required|array|size:2',
-            'values.*'=> 'integer',
+            'values.*'=> 'numeric|regex:/^\d+(\.\d{1,2})?$/',
             'operation'  => 'required|string|'.Rule::in(['sum','subtraction','division','multiplication'])
         ];
         $this->validate($request, $rules);
@@ -29,7 +29,7 @@ class CalculatorController extends Controller
         $result = $this->{$request->operation}();
 
         $data = [
-            'result' => $result,
+            'result' => is_float($result) ? number_format($result,2) : $result,
             'status' =>is_numeric($result) ? 'OK' : 'error'
         ];
         $code = is_numeric($result) ? 200 : 422;

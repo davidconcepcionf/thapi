@@ -11,7 +11,7 @@
 <body class="bg-light">
     <div class="container">
         <div class="py-5 text-center">
-            <h2>The Tower Studio Test</h2>
+            <h2>Tower House Studio Test</h2>
         </div>
         <div class="row">
             <div class="col-md-12 order-md-1">
